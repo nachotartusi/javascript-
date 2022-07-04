@@ -1,9 +1,670 @@
 body {
-    background-color: black;
-
-}
-h1,h2 {
-    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  
+  body {
+    overflow-x: hidden; }
+  
+  /*media querie mobile*/
+  .contactoGrid {
+    display: grid;
+    grid-template-areas: "titulo" "formulario" "ubicacion";
+    justify-content: center;
+    display: flex;
+    flex-flow: column nowrap; }
+    .contactoGrid .titulo {
+      grid-area: titulo; }
+    .contactoGrid .formulario1 {
+      margin: 0 2rem;
+      grid-area: formulario;
+      text-align: left; }
+    .contactoGrid .ubicacion {
+      grid-area: ubicacion;
+      text-align: center;
+      padding-top: 2rem; }
+      .contactoGrid .ubicacion .direccion {
+        padding-top: 3rem; }
+        .contactoGrid .ubicacion .direccion h3 {
+          font-size: 1rem; }
+        .contactoGrid .ubicacion .direccion p {
+          text-align: center;
+          font-size: 0.8rem; }
+      .contactoGrid .ubicacion .h2ubicacion {
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 30px;
+        letter-spacing: 2px;
+        color: #057f97; }
+    .contactoGrid iframe {
+      padding-top: 2rem;
+      width: 80%;
+      border-radius: 3rem; }
+  
+  /* media querie tablet*/
+  @media only screen and (min-width: 800px) {
+    .contactoGrid {
+      display: grid;
+      grid-template-areas: "titulo" "formulario" "ubicacion";
+      justify-content: center;
+      display: flex;
+      flex-flow: column nowrap; }
+      .contactoGrid .titulo {
+        grid-area: titulo;
+        letter-spacing: 3px; }
+      .contactoGrid .formulario1 {
+        margin: 2.5rem;
+        grid-area: formulario;
+        text-align: left; }
+      .contactoGrid .ubicacion {
+        grid-area: ubicacion;
+        text-align: center;
+        padding-top: 2rem; }
+        .contactoGrid .ubicacion .direccion {
+          padding: 0; }
+          .contactoGrid .ubicacion .direccion h3 {
+            font-size: 1.4rem; }
+          .contactoGrid .ubicacion .direccion p {
+            padding: 0; }
+        .contactoGrid .ubicacion .h2ubicacion {
+          font-size: 2.3rem;
+          padding: 0 1rem 0 1rem;
+          background-color: #d5f3f9; }
+      .contactoGrid iframe {
+        padding-top: 2rem;
+        width: 60%;
+        border-radius: 3rem; } }
+  
+  /*media querie desktop*/
+  @media only screen and (min-width: 1024px) {
+    .contactoGrid {
+      display: grid;
+      grid-template-areas: "titulo titulo" "formulario ubicacion";
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      justify-content: center; }
+    .titulo {
+      grid-area: titulo; }
+      .titulo h1 {
+        font-size: 3.7rem;
+        letter-spacing: 5px; }
+    .formulario1 {
+      grid-area: formulario;
+      padding-top: 5rem;
+      width: 90%; }
+    .ubicacion {
+      grid-area: ubicacion;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center; }
+    .h2ubicacion {
+      font-size: 1px; }
+    .direccion {
+      padding-top: 1rem; }
+      .direccion p {
+        text-align: center;
+        padding-right: 2rem; } }
+  
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0; }
+  
+  .divIndex {
+    background-color: #d5f3f9;
+    padding-bottom: 15rem;
+    padding-top: 5rem; }
+    .divIndex .titulo {
+      text-align: center;
+      padding-top: 50px;
+      font-size: 30px;
+      font-weight: 1900;
+      letter-spacing: 6px;
+      background-color: #d5f3f9; }
+    .divIndex .subtituloQuiro {
+      text-align: center;
+      padding: 20px;
+      letter-spacing: 10px;
+      padding-bottom: 4rem; }
+    .divIndex .parrafoConsulta {
+      text-align: center;
+      text-decoration: none; }
+  
+  .sectionNosotros {
+    background-color: #d5f3f9;
+    padding-bottom: 3rem; }
+    .sectionNosotros .divNosotros {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      flex-direction: column-reverse; }
+    .sectionNosotros .divHijo {
+      justify-self: center; }
+    .sectionNosotros .subtituloNosotros, .sectionNosotros .subtituloNosotrosQ {
+      text-align: center;
+      padding: 10px;
+      font-size: 2rem; }
+    .sectionNosotros .parrafoQuiro {
+      font-family: 'Roboto', sans-serif; }
+    .sectionNosotros .leerMas {
+      text-align: center;
+      padding-top: 20px; }
+    .sectionNosotros .divHijo2 {
+      padding-top: 80px;
+      text-align: center; }
+      .sectionNosotros .divHijo2 img {
+        width: 70%; }
+  
+  #ventajas {
+    background-color: #d5f3f9; }
+    #ventajas .ventajasTitulo {
+      text-align: center;
+      padding-bottom: 10px;
+      font-size: 30px;
+      letter-spacing: 2px;
+      color: #057f97; }
+    #ventajas .divVentajas {
+      text-align: center;
+      width: 10%; }
+    #ventajas h4 {
+      color: #057f97; }
+    #ventajas .li1, #ventajas .li2, #ventajas .li3, #ventajas .li4 {
+      justify-content: center;
+      padding: 2rem;
+      margin: 2rem 3rem 2rem 2rem;
+      list-style: none;
+      border-radius: 38px 38px 38px 38px;
+      -moz-border-radius: 38px 38px 38px 38px;
+      -webkit-border-radius: 38px 38px 38px 38px;
+      border: solid 5px #00b4d8; }
+  
+  .salasIndex {
     text-align: center;
-    
-}
+    padding: 5rem; }
+    .salasIndex .imagenSalas {
+      text-align: center; }
+    .salasIndex .linkSalas {
+      font-size: 12px;
+      text-align: center; }
+  
+  /*media querie tablet*/
+  @media only screen and (min-width: 800px) {
+    .divIndex .titulo {
+      text-align: center;
+      padding-top: 50px;
+      font-size: 2.5rem; }
+    .divIndex .subtituloQuiro {
+      text-align: center;
+      padding: 20px;
+      letter-spacing: 10px;
+      padding-bottom: 4rem; }
+    .divIndex .parrafoConsulta {
+      text-align: center;
+      text-decoration: none; }
+    .sectionNosotros .subtituloNosotros {
+      text-align: center;
+      padding: 10px;
+      font-size: 2.3rem; }
+    .sectionNosotros .parrafoQuiro {
+      font-size: 1.2rem;
+      padding-top: 1px; }
+    .sectionNosotros .leerMas {
+      text-align: center;
+      padding-top: 20px; }
+    .sectionNosotros .divHijo2 {
+      padding-top: 80px;
+      text-align: center; }
+      .sectionNosotros .divHijo2 img {
+        width: 70%; }
+    .parrafoNosotros2 .subtituloNosotrosQ {
+      text-align: center;
+      padding: 10px;
+      font-size: 2.3rem; }
+    .li1, .li2, .li3, .li4 {
+      font-size: 1rem; }
+    .imagenSalas img {
+      width: 50%;
+      border: none; }
+    .imagenSalas .linkSalas {
+      font-size: 1rem; } }
+  
+  /*media querie desktop*/
+  @media only screen and (min-width: 1024px) {
+    .divIndex .titulo {
+      font-size: 3rem;
+      padding-top: 1rem; }
+    .sectionNosotros .subtituloNosotros {
+      font-size: 2.3rem; }
+    .sectionNosotros .parrafoQuiro {
+      font-size: 1.3rem;
+      padding-top: 1px; }
+    .sectionNosotros .leerMas {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 1.3rem; }
+    .sectionNosotros .parrafoNosotros2 {
+      padding: 6rem; }
+    #ventajas .ventajasTitulo {
+      font-size: 2.5rem; }
+    .li1, .li2, .li3, .li4 {
+      justify-self: center;
+      padding: 30px 8px 6px 8px;
+      list-style: none;
+      font-size: 1.2rem; }
+    .salasIndex .imagenSalas img {
+      visibility: hidden; }
+    .salasIndex .linkSalas {
+      font-size: 1rem; } }
+  
+  body {
+    overflow-x: hidden; }
+  
+  /* grid mobile*/
+  .nosotrosGrid {
+    display: grid;
+    grid-template-areas: "nosotros" "video" "objetivo" "vision" "mision";
+    justify-content: center; }
+    .nosotrosGrid .divHijoNosotros {
+      grid-area: nosotros;
+      margin: 2rem; }
+      .nosotrosGrid .divHijoNosotros .h2-nosotros {
+        text-align: center;
+        padding-bottom: 50px;
+        padding-top: 40px;
+        font-size: 1.7rem;
+        letter-spacing: 3px; }
+      .nosotrosGrid .divHijoNosotros .parrafoQuiro2 {
+        font-size: 15px;
+        letter-spacing: 1px;
+        text-align: justify;
+        font-style: italic;
+        padding-top: 1px; }
+    .nosotrosGrid .divImgNosotros {
+      padding-top: 3rem;
+      grid-area: video;
+      text-align: center; }
+      .nosotrosGrid .divImgNosotros .animate__animated {
+        width: 70%; }
+    .nosotrosGrid .objetivo {
+      grid-area: objetivo; }
+      .nosotrosGrid .objetivo h4 {
+        text-align: center;
+        font-size: 1.6rem; }
+      .nosotrosGrid .objetivo li {
+        font-size: 1rem;
+        text-align: justify;
+        letter-spacing: 2px;
+        text-align: center;
+        padding: 2rem; }
+    .nosotrosGrid .vision {
+      grid-area: vision; }
+      .nosotrosGrid .vision h4 {
+        text-align: center;
+        font-size: 1.6rem; }
+      .nosotrosGrid .vision li {
+        font-size: 1rem;
+        text-align: justify;
+        letter-spacing: 2px;
+        text-align: center;
+        padding: 2rem; }
+    .nosotrosGrid .mision {
+      grid-area: mision; }
+      .nosotrosGrid .mision h4 {
+        text-align: center;
+        font-size: 1.6rem; }
+      .nosotrosGrid .mision li {
+        font-size: 1rem;
+        text-align: justify;
+        letter-spacing: 2px;
+        text-align: center;
+        padding: 2rem; }
+  
+  /*media querie tablet*/
+  @media only screen and (min-width: 800px) {
+    .nosotrosGrid {
+      display: grid;
+      grid-template-areas: "nosotros" "video" "objetivo" "vision" "mision";
+      justify-content: center; }
+      .nosotrosGrid .divHijoNosotros {
+        grid-area: nosotros;
+        margin: 2rem; }
+        .nosotrosGrid .divHijoNosotros .h2-nosotros {
+          font-size: 2rem; }
+        .nosotrosGrid .divHijoNosotros .parrafoQuiro2 {
+          font-size: 1.2rem;
+          padding: 1rem 5rem; }
+      .nosotrosGrid .divImgNosotros {
+        padding-top: 3rem;
+        grid-area: video;
+        text-align: center; }
+        .nosotrosGrid .divImgNosotros .animate__animated {
+          width: 40%; }
+      .nosotrosGrid .objetivo {
+        grid-area: objetivo; }
+        .nosotrosGrid .objetivo h4 {
+          font-size: 1.8rem; }
+        .nosotrosGrid .objetivo li {
+          font-size: 1rem; }
+      .nosotrosGrid .vision {
+        grid-area: vision; }
+        .nosotrosGrid .vision h4 {
+          text-align: center;
+          font-size: 1.8rem; }
+        .nosotrosGrid .vision li {
+          font-size: 1rem; }
+      .nosotrosGrid .mision {
+        grid-area: mision; }
+        .nosotrosGrid .mision h4 {
+          text-align: center;
+          font-size: 1.8rem; }
+        .nosotrosGrid .mision li {
+          font-size: 1rem; } }
+  
+  /*media querie desktop*/
+  @media only screen and (min-width: 1024px) {
+    .nosotrosGrid {
+      display: grid;
+      grid-template-areas: "nosotros nosotros nosotros " "foto1 foto1 foto1" "objetivo objetivo objetivo";
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center; }
+      .nosotrosGrid .divHijoNosotros {
+        grid-area: nosotros;
+        align-content: left; }
+        .nosotrosGrid .divHijoNosotros .h2-nosotros {
+          font-size: 3rem;
+          padding-top: 2rem; }
+        .nosotrosGrid .divHijoNosotros .parrafoQuiro2 {
+          font-size: 1.4rem;
+          padding: 1rem 10rem 0.3rem 10rem;
+          color: darkslategray;
+          letter-spacing: 1px;
+          text-align: justify; }
+      .nosotrosGrid .divImgNosotros {
+        grid-area: foto1; }
+        .nosotrosGrid .divImgNosotros .animate__animated {
+          width: 30%; }
+      .nosotrosGrid .objetivos {
+        grid-area: objetivo;
+        text-align: center;
+        padding: 3rem 0; }
+      .nosotrosGrid .objetivo, .nosotrosGrid .mision, .nosotrosGrid .vision {
+        text-align: center; }
+        .nosotrosGrid .objetivo h4, .nosotrosGrid .mision h4, .nosotrosGrid .vision h4 {
+          text-align: center;
+          font-size: 2rem; }
+        .nosotrosGrid .objetivo li, .nosotrosGrid .mision li, .nosotrosGrid .vision li {
+          font-size: 1rem;
+          padding: 1rem 9rem;
+          text-align: justify;
+          color: darkslategray; } }
+  
+  /* TESTIMONIOS media querie mobile */
+  .mainTestimonios {
+    display: grid;
+    grid-template-areas: "titulo" "logo1" "testimonio1" "logo2" "testimonio2" "logo3" "testimonio3"; }
+  
+  h1 {
+    grid-area: titulo;
+    justify-self: center;
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem; }
+  
+  .img1 {
+    grid-area: logo1;
+    justify-self: center;
+    margin-top: 30px;
+    border-radius: 88px 88px 88px 88px;
+    -moz-border-radius: 88px 88px 88px 88px;
+    -webkit-border-radius: 88px 88px 88px 88px;
+    border: 8px outset #000000;
+    width: 20%; }
+  
+  .testimoniosHijo1 {
+    grid-area: testimonio1;
+    justify-self: right;
+    padding: 20px;
+    text-align: center; }
+    .testimoniosHijo1 p {
+      text-align: center;
+      padding: 2rem; }
+  
+  .img2 {
+    grid-area: logo2;
+    justify-self: center;
+    margin-top: 30px;
+    border-radius: 88px 88px 88px 88px;
+    -moz-border-radius: 88px 88px 88px 88px;
+    -webkit-border-radius: 88px 88px 88px 88px;
+    border: 8px outset #000000;
+    width: 20%; }
+  
+  .testimoniosHijo2 {
+    grid-area: testimonio2;
+    padding: 20px;
+    text-align: center; }
+    .testimoniosHijo2 p {
+      text-align: center;
+      padding: 2rem; }
+  
+  .img3 {
+    grid-area: logo3;
+    justify-self: center;
+    margin-top: 30px;
+    border-radius: 88px 88px 88px 88px;
+    -moz-border-radius: 88px 88px 88px 88px;
+    -webkit-border-radius: 88px 88px 88px 88px;
+    border: 8px outset #000000;
+    width: 20%; }
+  
+  .testimoniosHijo3 {
+    grid-area: testimonio3;
+    padding: 20px;
+    text-align: center; }
+    .testimoniosHijo3 p {
+      text-align: center;
+      padding: 2rem; }
+  
+  /*media querie tablet*/
+  @media only screen and (min-width: 800px) {
+    .mainTestimonios {
+      display: grid;
+      grid-template-areas: "titulo titulo titulo" "logo1 testimonio1 testimonio1"      "logo2 testimonio2 testimonio2"             "logo3 testimonio3 testimonio3";
+      column-gap: 100px;
+      padding-top: 2rem; }
+      .mainTestimonios h1 {
+        grid-area: titulo;
+        justify-self: center;
+        font-size: 4rem;
+        padding-bottom: 4rem;
+        letter-spacing: 3px; }
+      .mainTestimonios h2 {
+        text-align: center;
+        font-size: 2.4rem;
+        background-color: #ade8f4; }
+      .mainTestimonios p {
+        font-size: 1.1rem;
+        padding: 1rem 2rem 1rem 2rem; }
+      .mainTestimonios img {
+        width: 50%; }
+      .mainTestimonios .testimoniosHijo1, .mainTestimonios .testimoniosHijo2, .mainTestimonios .testimoniosHijo3 {
+        margin: 1rem; }
+    .testimoniosHijo1 {
+      grid-area: testimonio1;
+      justify-self: right;
+      text-align: center; }
+    .testimoniosHijo2 {
+      grid-area: testimonio2;
+      justify-self: right;
+      text-align: center; }
+    .testimoniosHijo3 {
+      grid-area: testimonio3;
+      justify-self: right;
+      text-align: center; } }
+  
+  /* TESTIMONIOS media querie desktop*/
+  @media only screen and (min-width: 1024px) {
+    .mainTestimonios {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      display: grid;
+      grid-template-areas: "titulo titulo titulo" "logo1 testimonio1 testimonio1"                  "logo2 testimonio2 testimonio2"                   "logo3 testimonio3 testimonio3";
+      column-gap: 100px; }
+      .mainTestimonios h1 {
+        grid-area: titulo;
+        justify-self: center;
+        font-size: 4rem;
+        letter-spacing: 4px;
+        padding-bottom: 4rem; }
+      .mainTestimonios h2 {
+        text-align: center;
+        font-size: 2.3rem; }
+      .mainTestimonios p {
+        font-size: 1.3rem;
+        padding: 1rem 2rem 1rem 2rem; }
+      .mainTestimonios img {
+        width: 40%; }
+      .mainTestimonios .testimoniosHijo1, .mainTestimonios .testimoniosHijo2, .mainTestimonios .testimoniosHijo3 {
+        margin: 1.5rem; }
+    .testimoniosHijo1 {
+      grid-area: testimonio1;
+      justify-self: right;
+      text-align: center; }
+    .testimoniosHijo2 {
+      grid-area: testimonio2;
+      justify-self: right;
+      text-align: center; }
+    .testimoniosHijo3 {
+      grid-area: testimonio3;
+      justify-self: right;
+      text-align: center; } }
+  
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0; }
+  
+  /*mobile */
+  .mainSalas {
+    display: grid;
+    grid-template-areas: "carrusel" "salas"; }
+  
+  #sectionSalas {
+    grid-area: carrusel;
+    padding-top: 5rem;
+    width: 80%; }
+  
+  .salasQuiro {
+    grid-area: salas; }
+    .salasQuiro h1 {
+      font-size: 1.8rem;
+      text-align: center;
+      padding-top: 4rem; }
+    .salasQuiro p {
+      color: darkslategray;
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.9rem;
+      padding: 2rem;
+      letter-spacing: 1px;
+      text-align: center;
+      font-style: italic;
+      padding-top: 1px; }
+  
+  ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    color: #057f97;
+    text-align: center; }
+  
+  @media only screen and (min-width: 800px) {
+    .mainSalas {
+      display: grid;
+      grid-template-areas: "carrusel" "salas";
+      align-content: space-between; }
+    #sectionSalas {
+      grid-area: carrusel;
+      align-self: center; }
+    .salasQuiro {
+      grid-area: salas;
+      padding-bottom: 3rem; }
+      .salasQuiro h1 {
+        font-size: 2rem; }
+      .salasQuiro p {
+        font-size: 1rem;
+        padding: 0 3rem; }
+      .salasQuiro li {
+        font-size: 1.5rem; } }
+  
+  @media only screen and (min-width: 1024px) {
+    .mainSalas {
+      display: grid;
+      grid-template-areas: "carrusel carrusel salas salas" "carrusel carrusel salas salas"; }
+    #sectionSalas {
+      grid-area: carrusel;
+      padding-top: 1rem;
+      width: 100%; }
+    .salasQuiro {
+      grid-area: salas;
+      padding: 3rem; }
+      .salasQuiro h1 {
+        font-size: 2.5rem;
+        padding-bottom: 2rem; }
+      .salasQuiro p {
+        font-size: 1rem;
+        padding: 0 5rem 1rem 5rem; } }
+  
+  footer {
+    grid-area: footer;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #ade8f4;
+    padding: 10px;
+    text-align: center; }
+    footer a {
+      text-align: center;
+      text-decoration: none; }
+    footer p {
+      text-align: center; }
+  
+  .botonInsta, .botonFb {
+    font-size: 1.5rem; }
+  
+  p, li {
+    color: darkslategray;
+    letter-spacing: 1px;
+    text-align: justify; }
+  
+  header {
+    justify-content: center;
+    text-align: center;
+    background-color: #ade8f4; }
+  
+  body {
+    background-color: #d5f3f9; }
+    body p, body h1, body h2, body h3, body h4, body h5 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+  
+  img {
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: solid #00b4d8; }
+  
+  .linkConsulta, .linkNosotros, .linkSalas {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border: solid #00b4d8;
+    background-color: #d5f3f9;
+    border-radius: 1rem;
+    padding: 10px;
+    text-transform: uppercase; }
+    .linkConsulta:hover, .linkNosotros:hover, .linkSalas:hover {
+      background-color: #4fa5b6;
+      transform: scale(10px);
+      color: #d5f3f9; }
+  
+  .botonInsta {
+    color: #1794ad; }
+  
+  .botonFb {
+    color: #1794ad; }
